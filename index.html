@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Religious Holidays Search</title>
+    <title>Holidays Search</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Religious Holidays</h1>
+    <h1>Holidays</h1>
     <form id="js-form">
-        <label for="js-search-term">Religion</label>
-        <input type="text" name="religion" id="js-search-term" required>
+        <label for="js-search-term">Choose the types of holidays you would like to learn about:</label>
+        <select name="js-search-term" id="js-search-term">
+            <option value="Christian">Christian</option>
+            <option value="Muslim">Muslim</option>
+            <option value="Orthodox">Orthodox</option>
+            <option value="National holiday">National</option>
+            <option value="Worldwide observance">Worldwide</option>
+            <option value="Local holiday">Local</option>
+          </select>
 
         <label for="js-year-results">Year</label>
         <input type="number" name="year-results" id="js-year-results" value="2020">
